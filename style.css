@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Body and Main Styling */
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+main {
+    padding-top: 80px; /* To avoid overlap with the fixed header */
+}
+
+/* Header Styling */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    z-index: 1000;
+}
+
+header .logo img {
+    max-width: 60px;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-item a:hover {
+    color: #007BFF;
+}
+
+/* Section Styling */
+section {
+    min-height: 100vh;
+    padding: 100px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Section Background Colors */
+#home {
+    background: linear-gradient(to bottom right, #007BFF, #00C6FF);
+    color: #fff;
+}
+
+#packages {
+    background: lightblue;
+    color: #333;
+}
+
+#services {
+    background: lightblue;
+    color: #333;
+}
+
+#reviews {
+    background: lightblue;
+    color: #333;
+}
+
+#contact {
+    background: lightblue;
+    color: #333
+}
+
+/* Section Titles and Text */
+section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+/* Call-to-Action Button */
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:darkblue;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: blue;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    section {
+        padding: 50px 20px;
+    }
+
+    section h1 {
+        font-size: 2rem;
+    }
+
+    section p {
+        font-size: 1rem;
+    }
+}
